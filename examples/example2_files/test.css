@@ -1,0 +1,18 @@
+#parent {
+	background-color: red;
+	height: 400px;
+	width: 500px;
+}
+.column {
+	float: left;
+	width: 33.3%;
+	margin: 5px;
+	background-color: blue;
+	height: 200px;
+}
+.columnBottom {
+	float: left;
+	width: 20%;
+	margin: 2pt;
+	background-color: green;
+}

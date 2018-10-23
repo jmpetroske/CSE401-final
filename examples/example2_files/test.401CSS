@@ -1,0 +1,23 @@
+@mixin column($numColumns, $marginSize) {
+	float: left;
+	width: (100% / $numColumns) - (2 * $marginSize);
+	margin: $marginSize;
+}
+
+
+#parent {
+	background-color: red;
+	height: 400px;
+	width: 500px;
+}
+
+.column {
+	@use column(3, 5px);
+	background-color: blue;
+	height: 200px;
+}
+
+.columnBottom {
+	@use column(5, 2pt);
+	background-color: green;
+}

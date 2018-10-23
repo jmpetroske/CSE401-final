@@ -1,0 +1,9 @@
+$somevar = 5 * 10px;
+
+.my-header {
+    $pad = 5px;
+
+    font-size: 2 * 12px;
+    padding: (2 * $pad) 0 0 (2 * $pad);
+    height: $somevar / 2px;
+}

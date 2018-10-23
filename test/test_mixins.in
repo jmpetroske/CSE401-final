@@ -1,0 +1,11 @@
+$yellow = #ff0000;
+$color = brown;
+
+@mixin alert($color, $multiple) {
+    background-color: $color;
+    font-size: 10px * $multiple;
+}
+
+.selector {
+    @use alert($yellow, 2);
+}

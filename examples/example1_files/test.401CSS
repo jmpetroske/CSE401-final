@@ -1,0 +1,31 @@
+$fg-color = #000;
+$bg-color = #fefefe;
+$box-size = 50px;
+$font-size = 10px;
+
+/* box mixin, creates a box with $box-size * $multiplier and color $bg and font size */
+@mixin box($multiplier, $bg) {
+	display: block;
+	height: $box-size * $multiplier;
+	width: $box-size * $multiplier;
+	float: left;
+	background-color: $bg;
+
+	/* set font size to a multiple of $multiplier also */
+	font-size: $font-size + ($multiplier * $multiplier * 5px);
+	text-align: center;
+	font-family: Arial;
+}
+
+html {
+	 background-color: $bg-color;
+	 color: $fg-color;
+}
+
+/* create boxes of increasing size with different colors
+by using the box mixin for each selector */
+.b1 { @use box(1, red); }
+.b2 { @use box(2, blue); }
+.b3 { @use box(3, green); }
+.b4 { @use box(4, yellow); }
+.b5 { @use box(5, purple); }

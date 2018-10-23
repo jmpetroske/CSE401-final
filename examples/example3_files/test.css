@@ -1,0 +1,22 @@
+html {
+	padding: 10px;
+}
+.container {
+	width: 80%;
+	background-color: red;
+	height: 200px;
+}
+#left {
+	display: block;
+	width: 50%;
+	background-color: blue;
+	height: 100%;
+	float: left;
+}
+#right {
+	display: block;
+	width: 50%;
+	background-color: yellow;
+	height: 100%;
+	float: right;
+}

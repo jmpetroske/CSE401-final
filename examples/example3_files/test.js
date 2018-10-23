@@ -1,0 +1,1 @@
+var calcOperations = [{ "selector": "#left", "parentProperty": "width", "property": "width", "expr": { "op": "SUB", "left": { "num": 50, "unit": "%" }, "right": { "num": 12, "unit": "px" } }}, { "selector": "#right", "parentProperty": "width", "property": "width", "expr": { "op": "SUB", "left": { "num": 50, "unit": "%" }, "right": { "num": 12, "unit": "px" } }}]

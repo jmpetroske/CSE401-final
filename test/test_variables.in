@@ -1,0 +1,13 @@
+$var = 12px;
+$var2 = 12px * 2;
+
+.selector {
+    height: $var;
+    width: $var2;
+    $var = 0;
+}
+
+.selector2 {
+    height: $var;
+    width: $var2;
+}

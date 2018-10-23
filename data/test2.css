@@ -1,0 +1,21 @@
+@mixin add-padding($arg1) {
+    padding-top: $arg1;
+}
+
+@mixin moo() {
+    min-height: 100%;
+}
+
+$variable = 75%;
+$variable = #fff;
+$padding = 10px + 15px * 10 / 10px;
+
+selector {
+    $variable = 50%;
+
+    @use add-padding($padding);
+    @use moo();
+
+    attr: 12px 12px;
+    min-height: $variable * 2px;
+}

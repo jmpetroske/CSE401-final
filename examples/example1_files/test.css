@@ -1,0 +1,54 @@
+html {
+	background-color: #fefefe;
+	color: #000;
+}
+.b1 {
+	display: block;
+	height: 50px;
+	width: 50px;
+	float: left;
+	background-color: red;
+	font-size: 15px;
+	text-align: center;
+	font-family: Arial;
+}
+.b2 {
+	display: block;
+	height: 100px;
+	width: 100px;
+	float: left;
+	background-color: blue;
+	font-size: 30px;
+	text-align: center;
+	font-family: Arial;
+}
+.b3 {
+	display: block;
+	height: 150px;
+	width: 150px;
+	float: left;
+	background-color: green;
+	font-size: 55px;
+	text-align: center;
+	font-family: Arial;
+}
+.b4 {
+	display: block;
+	height: 200px;
+	width: 200px;
+	float: left;
+	background-color: yellow;
+	font-size: 90px;
+	text-align: center;
+	font-family: Arial;
+}
+.b5 {
+	display: block;
+	height: 250px;
+	width: 250px;
+	float: left;
+	background-color: purple;
+	font-size: 135px;
+	text-align: center;
+	font-family: Arial;
+}

@@ -1,0 +1,28 @@
+$padding = 12px;
+
+@mixin box($color) {
+	display: block;
+	width: 50% - 12px;
+	background-color: $color;
+	height: 100%;
+}
+
+html {
+	padding: 10px;
+}
+
+.container {
+	width: 80%;
+	background-color: red;
+	height: 200px;
+}
+
+#left {
+	@use box(blue);
+	float: left;
+}
+
+#right {
+	@use box(yellow);
+	float: right;
+}

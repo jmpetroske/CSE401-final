@@ -1,0 +1,28 @@
+@mixin add-padding($arg1) {
+    padding-top: $arg1;
+    /* @use set-height(1,2,3); */
+    @use add-padding(123); /* recursive call, should not get executed */
+}
+
+@mixin set-height($arg1, $arg2, $arg3) {
+    @use add-padding($arg1);
+    height: $arg1 $arg2 $arg3;
+}
+
+$variable = 75%;
+$padding = 10px + 12px * 10px;
+$padding2 = 10px + 12px;
+
+selector {
+    $variable = 50%;
+
+    @use add-padding($padding);
+    @use set-height(1);
+    @use set-height();
+
+    attr: 12px 12px;
+    min-height: $var1;
+    @use set-height(1,2,3);
+    min-height: -10px + 12px -12px * 5 5px * -5px 5pt - -5pt;
+    color: "red";
+}
